@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <Title> Ishraq's Personal Portfolio </Title>
+
+    <link rel = "stylesheet" href = mainwebsite.css>
+    <script src="https://kit.fontawesome.com/dc22a5f224.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav> 
+          <img src="images/logo.png" class = "logo">
+          <ul>
+            <li><a href = "#">Home</a></li>
+            <li><a href = "#">About</a></li>
+            <li><a href = "#">Projects</a></li>
+            <li><a href = "#">Resume</a></li>
+            <li><a href = "#">Contact</a></li>
+          </ul> 
+        </nav>
+
+        <div class="header-text">
+          <p>Aspiring Engineer</p>
+          <h1>Hey! <br> I'm <span>Ishraq Alam</span></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class = "container">
+        <div class = "row">
+          <div class="about-col-1">
+            <img src = "images/user.jpg">
+          </div>
+
+         <div class="about-col-2">
+            <h1 class = "sub-title">Get To Know Me Better</h1>
+            <p class = "about-body">Hi! I'm <strong>Ishraq Alam</strong>, a grade 12 student at <strong>R.H. King Academy</strong> living in <strong>Toronto, Ontario</strong>. 
+              I love music, math, and reading! If you don't find me hunched in front of my laptop coding, you can expect to see me taking walks, 
+              playing tennis, and hanging out with my friends. 
+            </p>
+
+            <div class = "titles-tab">
+              <p class = "tab-links active-link" onclick="opentab('programming-skills')"><strong>Programming Skills</strong></p>
+              <p class = "tab-links" onclick="opentab('experiences')"><strong>Experiences</strong></p>
+            </div>
+
+            <div class="tab-contents active-tab" id="programming-skills">
+              <ul>
+                <li>
+                  <span>Languages</span><br>C#, HTML, CSS, VB.Net, BASIC Stamp, Arduino
+                </li>
+                <li>
+                  <span>My Tools</span><br>Visual Studio Code, Microsoft, GitHub, Cubify Invent, Canva, Microsoft Office
+                </li>
+                <li>
+                  <span>Preferences</span><br>Backend, Web Development
+                </li>
+                <li>
+                  <span>Currently Learning</span><br>Python, React.js
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id ="experiences">
+              <ul>
+                <li>
+                  <span>In-School Extracurriculars</span><br>Coding Club President<br>Admin Events Council President<br>Science Tutor President
+                  <br>AI Club Vice-President<br>Engineering Club Mechatronics Executive
+                  <br>STEAM Club Media Executive<br>
+                  Math Tutor and Peer Tutor
+                </li>
+                <li>
+                  <span>Professional Experience</span><br>EmpowerED Workshop Executive<br>Youth Empowerment Program Leadership Development Intern
+                  <br>Founder of Mind Playground Org<br>DEEP 2024<br>Science Unlimited 2023<br>Author at International Science Magazine<br>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+
+      </div>
+    </div>
+
+    <div id="socials">
+      <div class="container">
+        <h1 class = "sub-title">My Socials</h1>
+         <div class="socials-list">
+            <div>
+              <i class="fa-brands fa-linkedin"></i>
+              <h2>LinkedIn</h2>
+              <p>My LinkedIn features some of my accomplishments and further expands on my experiences.
+                It also includes some other projects I have completed (hardware, articles, competitions).
+              </p>
+              <a href ="https://www.linkedin.com/notifications/?filter=all"><button>Travel to my LinkedIn!</button></a>
+            </div>
+            <div>
+              <i class="fa-brands fa-github"></i>
+              <h2>GitHub</h2>
+              <p>My GitHub demonstrates the projects I have built in the past through my repositories. It includes programs, games, and tools I have built to improve my skills.</p>
+              <a href ="https://github.com/ishraqalam01"><button>Explore my GitHub!</button></a>
+            </div>
+         </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+  </body>
+</html>
